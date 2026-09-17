@@ -1,6 +1,8 @@
 package com.abhinav.app1
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +17,24 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val btnLogin = findViewById<Button>(R.id.btnLogin)
+
+        btnLogin.setOnClickListener {
+
+            val intent = Intent(this, LoginActivity::class.java)
+
+            startActivity(intent)
+        }
+
+        val btnRegister = findViewById<Button>(R.id.btnRegister)
+
+        btnRegister.setOnClickListener {
+
+            val intent = Intent(this, RegisterActivity::class.java)
+
+            startActivity(intent)
         }
     }
 }
