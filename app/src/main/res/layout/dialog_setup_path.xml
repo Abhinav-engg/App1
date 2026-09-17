@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="32dp"
+    android:paddingEnd="32dp"
+    android:paddingTop="32dp"
+    android:paddingBottom="28dp"
+    android:background="@drawable/dialog_bg">
+
+    <TextView
+        android:id="@+id/tvSetupTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Your account is created-\nWelcome to Workify!"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSetupSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="Now, let’s set up your path."
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvSetupDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="Are you here to find the right\ntalent, or to start an exciting\nnew job journey?"
+        android:textColor="#626262"
+        android:textSize="16sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardTalentSeeker"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/role_card_bg">
+
+        <ImageView
+            android:id="@+id/imgTalentSeeker"
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:contentDescription="Talent Seeker"
+            android:scaleType="fitCenter"
+            android:src="@drawable/job"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTalentSeeker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Talent Seeker"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/imgTalentSeeker"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTalentSeekerSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(for Recruiters)"
+            android:textColor="#626262"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/tvTalentSeeker"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <CheckBox
+            android:id="@+id/cbTalentSeeker"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:buttonTint="@color/black"
+            android:contentDescription="Select Talent Seeker"
+            android:padding="4dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardJobHunter"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/role_card_bg">
+
+        <ImageView
+            android:id="@+id/imgJobHunter"
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:contentDescription="Job Hunter"
+            android:scaleType="fitCenter"
+            android:src="@drawable/job_seeker"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvJobHunter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job Hunter"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/imgJobHunter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvJobHunterSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(for Job Seekers)"
+            android:textColor="#626262"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/tvJobHunter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <CheckBox
+            android:id="@+id/cbJobHunter"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:buttonTint="@color/black"
+            android:contentDescription="Select Job Hunter"
+            android:padding="4dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="120dp"
+        android:layout_height="56dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#C8D8EF"
+        android:text="Next"
+        android:textColor="#626262"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="8dp" />
+
+</LinearLayout>
