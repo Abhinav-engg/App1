@@ -25,17 +25,19 @@
     <LinearLayout
         android:id="@+id/mainContent"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:orientation="vertical"
         android:layout_marginTop="48dp"
         app:layout_constraintStart_toStartOf="@id/guideStart"
         app:layout_constraintEnd_toEndOf="@id/guideEnd"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageView
             android:id="@+id/imgWelcome"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:adjustViewBounds="true"
             android:contentDescription="Welcome"
             android:scaleType="fitCenter"
@@ -69,7 +71,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="56dp"
             android:gravity="center_vertical"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginBottom="48dp">
 
             <Button
                 android:id="@+id/btnLogin"
